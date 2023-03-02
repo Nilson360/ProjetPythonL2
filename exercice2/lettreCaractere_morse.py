@@ -1,9 +1,9 @@
 # Exercice 2 :
 
-#Question 1:
+# Question 1:
 
 """
-Ecrire une structure de données associant chaque lettre et caractère de ponctuation ( , . : ; ' - ? ! ) à son code Morse. 
+ --- Ecrire une structure de données associant chaque lettre et caractère de ponctuation ( , . : ; ' - ? ! ) à son code Morse. 
 """
 
 code_morse = {
@@ -17,3 +17,9 @@ code_morse = {
     '!': '-.-.--'
 }
 print(code_morse['F'])
+
+# Explication :
+
+"""
+
+"""

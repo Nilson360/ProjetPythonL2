@@ -1,12 +1,12 @@
-# Exercice 2 :
+# Exercice  :
 
-#Question 1:
+#Question 3:
 
 """
-Ecrire une structure de données associant chaque lettre et caractère de ponctuation ( , . : ; ' - ? ! ) à son code Morse. 
+ --- Réaliser la fonction inverse, recevant en paramètre un code Morse et renvoyant sa traduction sous forme de chaine de caractères.
 """
 
-morse_code = {
+code_morse = {
     'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....',
     'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'O': '---', 'P': '.--.',
     'Q': '--.-', 'R': '.-.', 'S': '...', 'T': '-', 'U': '..-', 'V': '...-', 'W': '.--', 'X': '-..-',
@@ -16,4 +16,19 @@ morse_code = {
     ',': '--..--', '.': '.-.-.-', ':': '---...', ';': '-.-.-.', "'": '.----.', '-': '-....-', '?': '..--..',
     '!': '-.-.--'
 }
-print(morse_code['F'])
+
+def traduction_morse_texte(morse_texte):
+  
+    morse_texte = morse_texte.split()
+    texte = []
+    for code in morse_texte:
+        if code in code_morse:
+            texte.append(code_morse[code])
+        else:
+            texte.append(' ')
+    return ''.join(texte)
+
+print(traduction_morse_texte('.-.. .   .--. .-. --- .--- . -   .--. -.-- - .... --- -. .-.-.-'))
+
+# Explication :
+
