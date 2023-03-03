@@ -46,3 +46,5 @@ def main():
     # Déterminer si l'entrée est un texte ou un code Morse
 
 print(code_morse['F'])
+
+# Explication :

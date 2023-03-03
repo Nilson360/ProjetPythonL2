@@ -16,7 +16,16 @@ code_morse = {
     ',': '--..--', '.': '.-.-.-', ':': '---...', ';': '-.-.-.', "'": '.----.', '-': '-....-', '?': '..--..',
     '!': '-.-.--'
 }
-print(code_morse['F'])
+print("=============================================================================")
+print("ICI VOUS POUVEZ TRADUIRE UNE LETTRE, UN NUMÉRO OU UN CARACTÈRE EN CODE MORSE ")
+print("=============================================================================")
+
+caractere = input("\nEntrez la lettre ou le caractère: ")
+#print(code_morse['F'])
+
+print("\n")
+print(f"Voici la traduction de votre saisie \"{caractere}\" en morse : {code_morse[caractere]}")
+print("\n")
 
 # Explication :
 
