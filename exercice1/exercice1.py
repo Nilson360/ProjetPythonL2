@@ -35,16 +35,16 @@ def somme_sousLists(liste):
 # Test avec quelques listes de type L2 :
 
 liste1 = [[1, 2], [3, 2], [4, 5, 6]]
-liste2 = [[10, 20, 30], [40, 50], [60]]
-liste3 = [[-1, -2, -3], [-4, -5], [-6, -7, -8, -9]]
+liste2 = [[1, 2, 3], [4, 5], [6, 10]]
+liste3 = [[-1, -2, -3], [-4, -5], [-6, -7]]
 
 
 # Affichage des résultats :
 
 print("-------------------- Question 2 --------------------")
 print(somme_sousLists(liste1))  # doit afficher -> [3, 5, 15]
-print(somme_sousLists(liste2))  # doit afficher -> [60, 90, 60]
-print(somme_sousLists(liste3))  # doit afficher -> [-6, -9, -30]
+print(somme_sousLists(liste2))  # doit afficher -> [6, 9, 16]
+print(somme_sousLists(liste3))  # doit afficher -> [-6, -9, -13]
 
 
 # Explications : 
