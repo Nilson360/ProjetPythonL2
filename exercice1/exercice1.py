@@ -8,12 +8,12 @@
  --- Par exemple, pour un paramètre égal à [[1,2],[3,2],[4,5,6]] la fonction doit renvoyer : [3,5,15]
 """
 
-list1 = [[1, 2], [3, 2], [4, 5, 6]]
+liste1 = [[1, 2], [3, 2], [4, 5, 6]]
 
-def somme_sousLists(list1):
-    return [sum(souslist) for souslist in list1]
+def somme_sousLists(liste1):
+    return [sum(souslist) for souslist in liste1]
 
-sommes = somme_sousLists(list1)
+sommes = somme_sousLists(liste1)
 print(sommes)  # affiche -> [3, 5, 15]
 
 # Explications:

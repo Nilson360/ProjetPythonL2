@@ -9,6 +9,8 @@
  .-.. .   .--. .-. --- .--- . -   .--. -.-- - .... --- -. .-.-.-
 """
 
+#Definition de la structure de données :
+
 code_morse = {
     'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....',
     'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'O': '---', 'P': '.--.',
@@ -20,6 +22,10 @@ code_morse = {
     '!': '-.-.--'
 }
 
+caractere = input("Entrez votre phares: ")
+
+#fontion pour la traduction:
+
 def traduction_morse(texte):
     texte = texte.upper()
     morse_texte = []
@@ -30,6 +36,18 @@ def traduction_morse(texte):
             morse_texte.append(' ')
     return ' '.join(morse_texte)
 
-print(traduction_morse("Le projet Python"))
+print(f"\nVoici la traduction de votre phrase \"{caractere}\" en code morse: {traduction_morse(caractere)}")
 
 # Explication :
+
+"""
+En utilisant le dictionnaire de la question précédente et en ajoutant un input pour améliorer le cahier de charges,
+ voici l'explication du fonctionnement de la fonction de traduction :
+    -- fonction "traduction_morse()" prend en entrée une chaîne de caractères "texte" et renvoie sa traduction en code Morse.
+    -- Tout d'abord il utilise la methode ".upper()" pour convertir toutes les lettres de la chaîne en majuscule afin de matcher avec les éléments du dictionnaire
+    -- Ensuite, elle parcourt chaque caractère de la chaîne texte et vérifie si ce caractère existe dans le dictionnaire "traduction_morse". 
+        Si c'est le cas, elle ajoute le code morse correspondant à la liste "morse_texte" à l'aide de la méthode "append()".
+      Si le caractère n'est pas dans le "dictionnaire code_morse", la fonction ajoute un espace à la liste "morse_texte" à la place.
+    -- Enfin, la fonction renvoie une chaîne de caractères qui est la traduction de text en code Morse =>" return ' '.join(morse_texte)",
+     convertant la liste morse_texte en chaîne de caractères à l'aide de la méthode "join()" en insérant un espace entre chaque élément de la liste.
+"""
