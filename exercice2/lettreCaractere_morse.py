@@ -30,5 +30,10 @@ print("\n")
 # Explication :
 
 """
+Pour la réalisation de cet exercice, j'ai utilisé la structure de données du type dictionnaire. Pour chaque lettre,numéro ou caractère 
+de ponctuation est associé à son code Morse correspondant d'après Wikipédia
+
+Nous pouvons accéder à un code Morse spécifique en utilisant la notation des crochets, comme ceci : code_morse['F']
+Pour améliorer le code, j'ai ajouté un input.
 
 """
